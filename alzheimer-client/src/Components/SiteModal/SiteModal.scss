@@ -1,0 +1,61 @@
+@import '../../color';
+
+.site_modal {
+  .modal-content {
+    border-radius: 15px;
+    border-top: 10px solid $button;
+  }
+}
+
+.modal-body{
+  //text-align: center;
+  padding: 60px 0 !important;
+  border-radius: 20px !important;
+
+  .registration_modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review_modal{
+    padding: 25px;
+
+    hr{
+      width: 95%;
+      margin-bottom: 0 !important;
+      margin-top: 10px !important;
+      margin: auto;
+    }
+  }
+
+  p{
+    padding: 0 40px;
+    text-align: center;
+  }
+  h5{
+    margin-bottom: 20px;
+  }
+}
+
+.modal-dialog{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_header{
+  display: contents;
+
+  h4{
+    margin-bottom: 0;
+  }
+
+  svg{
+    font-size: 20px;
+    color: $darkBlue;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../color";
+
+.message_box {
+  position: absolute;
+  z-index: 99;
+  width: 380px;
+  background: white;
+  right: -50px;
+  top: 60px;
+  padding: 15px;
+  box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  h4 {
+    font-size: 14px;
+    color: $button;
+  }
+
+  .message_box_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #F1F1F3;
+    padding-top: 17px;
+    margin-top: 5px;
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .message_box_message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h5 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0 0 0 10px;
+      }
+      p {
+        font-size: 11px;
+        padding: 0;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  .message_box_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .badge {
+      color: white;
+      background-color: $darkBlue !important;
+      margin-left: 10px;
+      border-radius: 100px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+    }
+  }
+
+}
+
+.message_show {
+  display: block
+}
+
+.message_hide {
+  display: none
+}

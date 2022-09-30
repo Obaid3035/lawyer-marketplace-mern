@@ -1,0 +1,14 @@
+{
+  "name": "alzheimer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix alzheimer-client",
+    "server": "npm run start:dev --prefix alzheimer-server",
+    "watch": "npm run client & npm run server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

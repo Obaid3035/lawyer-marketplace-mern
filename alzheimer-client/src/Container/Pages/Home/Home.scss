@@ -1,0 +1,149 @@
+@import '../../../color';
+
+.get_touch{
+
+  h1{
+    color: $darkBlue;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    font-size: 55px;
+  }
+
+  p{
+    font-size: 18px;
+    span{
+      color: $darkBlue;
+      font-weight: 500;
+    }
+  }
+}
+.home_img{
+
+  img{
+    width: 100%;
+    max-width: 516px;
+    object-fit: contain;
+    height: auto;
+  }
+}
+.homeSection2_img{
+  padding-left: 0 !important;
+
+  img{
+    width: 100%;
+    max-width: 700px;
+    max-height: 590px;
+    object-fit: contain;
+  }
+}
+.homeSection2_text{
+  max-width: 620px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p{
+    color: $paragraph;
+    font-size: 15px;
+  }
+
+  h5{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  h4{
+    color: $button;
+    padding-left: 55px;
+    position: relative;
+    font-size: 27px;
+
+    &::before{
+      content: "";
+      width: 35px;
+      height: 3px;
+      background-color: $button;
+      position: absolute;
+      top: 14px;
+      left: 5px;
+    }
+  }
+}
+.legal_professional {
+  background-image: url('../../../Assets/Home_section3.png');
+  background-size: cover;
+  margin-top: 40px;
+  height: 80vh;
+  max-height: 577px;
+  background-repeat: no-repeat;
+
+  .legal_professional_desc{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      font-size: 45px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    h6{
+      font-size: 25px;
+      font-weight: 700;
+    }
+    p{
+      font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .get_touch{
+    margin: 20px 0;
+
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+  .home_img{
+    margin: 20px 0;
+  }
+  .homeSection2_text{
+    padding: 20px;
+    h5{
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 20px;
+
+      &::before {
+        top: 11px;
+      }
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+  .legal_professional{
+    height: auto;
+    .legal_professional_desc{
+      height: auto;
+      padding: 20px;
+      h1{
+        font-size: 30px;
+      }
+      h6{
+        font-size: 20px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+}

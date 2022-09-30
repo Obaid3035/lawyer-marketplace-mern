@@ -1,0 +1,78 @@
+@import '../../../../color';
+
+.testimonials_main{
+  margin: 100px 0;
+
+  h1{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      background-image: url('../../../../Assets/testimonial_comas.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      height: 100px;
+      width: 130px;
+      top: -15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: -1;
+    }
+  }
+  .customer_reviews{
+    margin-top: 40px;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      max-width: 70px;
+      max-height: 70px;
+      object-fit: contain;
+    }
+
+    h6{
+      margin-top: 10px;
+      font-weight: 600;
+    }
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick', serif;
+  font-size: 30px;
+  line-height: 1;
+  opacity: .90;
+  color: $button !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 767px){
+  .testimonials_main{
+    max-width: 300px;
+
+    .customer_reviews{
+      p{
+        font-size: 14px;
+      }
+    }
+
+    h1{
+      font-size: 30px;
+
+      &::before {
+        width: 80px;
+        top: -10px;
+      }
+    }
+  }
+}

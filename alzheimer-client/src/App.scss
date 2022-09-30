@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "color";
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Toastify{
+
+  .Toastify__toast-container{
+
+    .Toastify__toast{
+      border-top: 5px solid #1a9abb !important;
+      border-radius: 10px !important;
+
+      .Toastify__toast-body{
+
+        div{
+          color: #000 !important;
+        }
+      }
+    }
+  }
+}
+
+
+.active ~ .page_responsive {
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.2s ease;
+}
+.page_responsive {
+  position: absolute;
+  top: 16px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3%;
+  height: 100%;
+  width: calc(100% - 74px);
+  left: 74px;
+  transition: all 0.2s ease;
+
+  h1{
+    color: $darkBlue;
+    font-weight: 600;
+  }
+}
+
+
+
+// Tanveer BHai
+
+// .page_responsive {
+//   position: absolute;
+//   top: 16px;
+//   height: 100%;
+//   width: calc(100% - 250px);
+//   left: 240px;
+//   transition: all 0.5s ease;
+//   padding: 0 1%;
+// }

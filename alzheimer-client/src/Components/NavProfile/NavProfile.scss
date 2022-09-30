@@ -1,0 +1,70 @@
+@import "../../color";
+
+
+.nav_profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  svg{
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+
+.profile_dropdown {
+  z-index: 99;
+  position: absolute;
+  width: 200px;
+  background: white;
+  cursor: pointer;
+  display: none;
+  top: 80px;
+  right: 20px;
+  padding: 10px;
+  box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  .profile_dropdown_item {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    border-bottom: 1px solid #F1F1F3;
+    p {
+      margin-left: 16px;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    svg{
+      font-size: 22px;
+    }
+  }
+
+  .profile_dropdown_item:hover {
+    p {
+      color: $button;
+    }
+    svg{
+      color: $button;
+    }
+  }
+}
+
+.profile_dropdown_show {
+  display: block
+}
+
+.profile_dropdown_hide {
+  display: none
+}

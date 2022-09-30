@@ -1,0 +1,60 @@
+@import '../../../color';
+
+.registration_form, .login_form{
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: $boxShadow;
+  border-top: 8px solid $button;
+  border-radius: 10px;
+  padding: 20px;
+  .error_msg{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(254 203 203);
+    border-radius: 10px;
+
+    p{
+      color: red;
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg{
+        font-size: 25px;
+        padding-right: 6px;
+      }
+    }
+
+  }
+
+  .btn_login{
+    background-color: transparent;
+    border: none;
+    color: #1a9abb;
+  }
+
+  h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  p{
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0 0;
+    color: $paragraph;
+
+    a{
+      color: $button;
+    }
+  }
+}
+
+.login_form{
+  max-width: 500px !important;
+}
+

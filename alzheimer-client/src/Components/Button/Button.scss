@@ -1,0 +1,24 @@
+@import '../../color';
+
+.btn_style {
+  background-color: $button !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  border: none !important;
+  padding: 8px 45px !important;
+  border-radius: 20px !important;
+  text-transform: uppercase !important;
+  box-shadow: $boxShadow !important;
+  font-size: 12px !important;
+  transition: all 0.5s ease !important;
+  &:hover{
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 768px){
+  .btn_style{
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}

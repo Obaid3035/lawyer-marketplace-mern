@@ -1,0 +1,15 @@
+.location_img{
+  img{
+    width: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+    .location_img{
+      img{
+        text-align: center;
+      }
+    }
+  }

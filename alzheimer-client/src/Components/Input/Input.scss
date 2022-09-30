@@ -1,0 +1,43 @@
+@import '../../color';
+
+.form_group{
+
+  .form-control, .css-yk16xz-control, .css-1pahdxg-control, input[type="file"] {
+    background-color: #8080801c !important;
+    padding: 8px 10px;
+    border-radius: 20px !important;
+    border: 1px solid #8080801c !important;
+    width: 100% !important;
+    font-size: 13px !important;
+
+    &::placeholder{
+      color: #717171 !important;
+      padding-left: 3px !important;
+    }
+
+    &:focus-visible{
+      outline: none !important;
+      border: 1px solid $button !important;
+    }
+
+    &:focus{
+      box-shadow: none !important;
+    }
+  }
+  .form-label{
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  small{
+    font-size: 11px;
+    padding-left: 10px;
+  }
+}
+
+.css-yk16xz-control, .css-1pahdxg-control{
+  padding: 0 10px !important;
+}

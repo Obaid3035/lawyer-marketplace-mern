@@ -1,0 +1,114 @@
+@import '../../../../color';
+
+.LawyerRegister1_img{
+  padding-right: 0;
+
+  img{
+    max-width: 874px;
+    width: 100%;
+    max-height: 389px;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.register_section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    padding-left: 110px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $darkBlue;
+    letter-spacing: 1px;
+  }
+
+  h5{
+    color: $paragraph;
+    padding-left: 110px;
+    font-weight: 100;
+  }
+}
+.lawyer_section2{
+  margin: 30px 0;
+
+  .section2_desc{
+    h6{
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $darkBlue;
+
+      span{
+        color: $button;
+      }
+    }
+    p{
+      color: $paragraph;
+      margin-bottom: 25px;
+      font-weight: 300;
+      font-size: 15px;
+    }
+    ul{
+      li{
+        font-size: 15px;
+        margin-bottom: 8px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.caregiver_legal_professional{
+  margin: 50px 0;
+
+  h6{
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  h5{
+    color: $darkBlue;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    span{
+      color: $button;
+    }
+  }
+  ul{
+    li{
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .register_section1{
+    h1{
+      padding-left: 0;
+      font-size: 30px;
+    }
+    h5{
+      padding-left: 0;
+    }
+  }
+  .lawyer_section2{
+    .section2_desc{
+      padding: 20px;
+
+      p{
+        font-size: 14px;
+      }
+
+      ul{
+        li{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
